@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FilaFácil</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div>
+            <h1>FilaFácil</h1>
+            <span>Atendimento Inteligente</span>
+        </div>
+
+        <div class="user">
+            Visitante
+        </div>
+
+    </header>
+
+    <!-- BOAS VINDAS -->
+
+    <section class="welcome">
+
+        <h2>Bem-vindo 👋</h2>
+
+        <p>
+            Entre em filas sem sair de casa.
+        </p>
+
+    </section>
+
+    <!-- BUSCA -->
+
+    <section class="search">
+
+        <input
+            type="text"
+            id="busca"
+            placeholder="Buscar serviço..."
+        >
+
+    </section>
+
+    <!-- SERVIÇOS -->
+
+    <section class="services">
+
+        <h3>Serviços Disponíveis</h3>
+
+        <div class="service-grid">
+
+            <div class="card">
+                🏦
+                <h4>Banco</h4>
+                <span>Atendimento bancário</span>
+            </div>
+
+            <div class="card">
+                🏥
+                <h4>Posto de Saúde</h4>
+                <span>Consultas e exames</span>
+            </div>
+
+            <div class="card">
+                🏨
+                <h4>Hospital</h4>
+                <span>Atendimento médico</span>
+            </div>
+
+            <div class="card">
+                🧪
+                <h4>Laboratório</h4>
+                <span>Coleta e exames</span>
+            </div>
+
+            <div class="card">
+                🏛
+                <h4>Prefeitura</h4>
+                <span>Serviços públicos</span>
+            </div>
+
+            <div class="card">
+                🎓
+                <h4>Universidade</h4>
+                <span>Atendimento acadêmico</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SUA SENHA -->
+
+    <section class="current-ticket">
+
+        <h3>Sua Senha</h3>
+
+        <div class="ticket-card">
+
+            <div class="ticket-number">
+                ---
+            </div>
+
+            <div class="ticket-info">
+
+                <p>
+                    Entre em uma fila para gerar sua senha.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FILAS -->
+
+    <section class="queues">
+
+        <h3>Filas Ativas</h3>
+
+        <div id="listaFilas"></div>
+
+    </section>
+
+</div>
+
+<!-- MODAL -->
+
+<div id="modalCadastro" class="modal">
+
+    <div class="modal-content">
+
+        <h2>Entrar na Fila</h2>
+
+        <input
+            type="text"
+            id="nomeCliente"
+            placeholder="Digite seu nome"
+        >
+
+        <button id="btnEntrarFila">
+            Confirmar Entrada
+        </button>
+
+        <button id="btnCancelar">
+            Cancelar
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
